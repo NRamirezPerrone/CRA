@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ef8690;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.container {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.image-box {
+    width: 48%;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-box img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.image-box:hover img {
+    transform: scale(1.1);
+}
+
+.text-container {
+    line-height: 1.7;
+    font-size: 1.5rem;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50vw;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.text-container:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .text-container {
+        width: 80vw;
+    }
+}
+
+footer {
+    background-color: #000000;
+    color: #ccc;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-image {
+    width: 50px; /* Ajusta el tamaño según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
